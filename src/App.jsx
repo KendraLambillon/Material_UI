@@ -3,10 +3,14 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import CardExample from "./components/Card";
 
 export default function App() {
   return(
     <>
+      <Container maxWidth='sm' sx={{ pb: 2, m: 3}}>
+        <CardExample></CardExample>
+      </Container>
       <Container maxWidth='sm'
       sx={{ border:2, boxShadow: 3, pb: 2, m: 3}} >
         <h1>Primeros elementos</h1>
