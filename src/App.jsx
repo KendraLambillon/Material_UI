@@ -1,5 +1,9 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import AddLocationIcon from "@mui/icons-material/AddLocation";
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+
 export default function App() {
   return(
     <Container maxWidth='sm'
@@ -20,7 +24,9 @@ export default function App() {
       <Box sx={{ border:2, m:4, p:2, bgcolor:'lightgray', borderColor:'gray'}}>
         <Typography variant="h4" component='span'>Nueva Box</Typography>
       </Box>
-      <Button variant="contained">Mi primer boton</Button>
+      <Button variant="contained" startIcon={<AccessTimeIcon />}>Mi primer boton</Button>
+      <Button variant="outlined" endIcon={<AddLocationIcon />} color="success">Boton</Button>
+      <Button variant="text" startIcon={<AddBusinessIcon />} color="secondary">Boton</Button>
     </Container>
   )
 }
